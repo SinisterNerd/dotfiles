@@ -1,0 +1,47 @@
+# Catppuccin themed mocha settings for colorls
+#
+# Main Colors
+unrecognized_file: '#dc8a78' # Rosewater
+recognized_file:   '#6c6f85' # Subtext0
+executable_file:   '#40a02b' # Green
+dir:               '#7287fd' # Lavender
+
+# Link
+dead_link: '#d20f39'         # Red
+link:      '#179299'         # Teal
+
+# Special Files
+socket:    '#40a02b'         # Green
+blockdev:  '#40a02b'         # Green
+chardev:   '#40a02b'         # Green
+
+# Access Modes
+write:     '#ea76cb'         # Pink
+read:      '#8839ef'         # Mauve
+exec:      '#179299'         # Teal
+no_access: '#d20f39'         # Red
+
+# Age -- kept from Dracula Theme
+hour_old:    '#95a5d7'       # Comment - 20% lighter
+day_old:     '#6272a4'       # Comment
+no_modifier: '#44475a'       # Current Line
+
+# File Size
+file_large:  '#d20f39'       # Red
+file_medium: '#fe640b'       # Peach
+file_small:  '#40a02b'       # Green
+
+# Random
+report: '#40a02b'            # Green
+user:   '#179299'            # Teal
+tree:   '#44475a'            # Current Line -- Dracula
+empty:  '#6272a4'            # Comment -- Dracula
+error:  '#d20f39'            # Red
+normal: '#6c6f85'            # Subtext0
+
+# Git
+addition:     '#179299'      # Teal
+modification: '#df8e1d'      # Yellow
+deletion:     '#d20f39'      # Red
+untracked:    '#fe640b'      # Peach
+unchanged:    '#40a02b'      # Green
