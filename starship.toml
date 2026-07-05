@@ -3,8 +3,10 @@
 format = """
 [](red)\
 $os\
+$hostname\
+[](bg:rosewater fg:red)\
 $username\
-[](bg:teal fg:red)\
+[](bg:teal fg:rosewater)\
 $shell\
 [](bg:peach fg:teal)\
 $directory\
@@ -64,11 +66,17 @@ Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
 
+[hostname]
+style = "bg:red fg:crust"
+ssh_only = false
+format = '[ $ssh_symbol]($style)[$hostname]($style)'
+#trim_at = '.companyname.com'
+disabled = false
 
 [username]
 show_always = true
-style_user = "bg:red fg:crust"
-style_root = "bg:red fg:crust"
+style_user = "bg:rosewater fg:crust"
+style_root = "bg:rosewater fg:crust"
 format = '[ $user]($style)'
 
 [shell]
