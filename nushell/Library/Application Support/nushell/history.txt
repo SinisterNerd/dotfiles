@@ -1,0 +1,350 @@
+ls
+ls -la
+ls | sort size
+ls | sort-by size | reverse
+help ls
+help commands
+help commands explore
+ls | explore --head fals
+ls | explore --head false
+ls | explore
+ls -la | explore
+brew install --cask font-jetbrains-mono
+cd .config/
+ls
+cd ..
+ls 
+ls -la
+cd `Library/Application Support/com.mitchellh.ghostty/`config
+cd `Library/Application Support/com.mitchellh.ghostty/`
+ls
+m config.ghostty
+ls /opt/homebrew/bin/
+m config.ghostty
+exit
+ls
+brew install neovim
+sudo brew install neovim
+zsh
+brew
+config env<\n>
+# Add Homebrew to Nushell path<\n>$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')<\n>
+brew
+brew install neovim
+nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\<\n> ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim<\n> ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+nvim
+claude
+brew upgrade claude-code
+brew update
+brew ugrade
+brew upgrade
+brew install emacs
+emacs
+sqlcmd
+brew install sqlcmd
+sqlcmd --version
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C
+ls -la
+m .bash_history
+sudo m .bash_history
+m .bash_history
+more .bash_history
+set -o vi
+set vi -o
+vi
+set -o nvi
+brew install zellij
+zellij
+brew install zellij
+# Add Homebrew to Nushell path<\n>$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')<\n>
+nu --env-config
+nu config env
+# Add Homebrew to Nushell path<\n>$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')<\n>
+nu config env
+nu --env-config
+nu config nu
+nu --env-config
+$nu.env-path<\n>$nu.config-path<\n>
+m `~/Library/Application Support/nushell/`
+m `~/Library/Application Support/nushell/config.nu`
+zellij
+ls -la
+cd `~/Library/Application Support/`
+ls
+cd ~/.config/
+ls
+mv zellij rws
+ls
+zellij
+brew install tmux
+tmux
+ls
+rm -rf rws
+cd zellij/
+ls
+m config.kdl
+ls
+clear
+exit
+exit
+exit
+zellij
+123456
+abcd
+exit
+tmux
+ls
+m config.kdl
+cd ~
+exit
+zellij
+exit
+exit
+exit
+nexit
+exit
+cd ..
+ls
+cd ..
+ls -ls | where name in tmux
+ls -la
+ls
+ls -la | explore
+ls -la
+$env.config.table = {<\n>    mode: rounded<\n>    trim: {<\n>        methodology: truncating<\n>        truncating_suffix: "…"<\n>    }<\n>}
+ls -la
+exit
+tmux
+ps -A
+ps -a
+ps 
+ps -?
+ps --?
+ps --help
+exit
+brew
+ps --help
+^ps -A
+ps 
+ps | where name in tmux
+ps | where name in tcc
+ps | where name has tcc
+ps | where name has tmux
+ps | where name has zell
+ps --help
+ps -l
+ps -l | explore
+ls -la
+brew install starship
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+exit
+mkdir ($nu.data-dir | path join "vendor/autoload")<\n>starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+exit
+nu
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+pwd
+cd .config/
+ls
+m starship.toml
+pwd
+cd .config/
+exit
+m starship.toml
+cd .config/
+m starship.toml
+ls ~/.cache/starship/
+ls
+cd ~/.cache/starship/
+ls
+cd ~/.config
+ls
+cd
+cd ~/.config
+ls
+exit
+ls
+ls -la
+exit
+nu --?
+nu --help
+m test.txt
+m starship.toml
+clear
+ls
+m starship.toml
+exit
+sqlcmd
+sqlcmd --help
+sqlcmd config
+sqlcmd config add-context
+sqlcmd config add-context 1
+sqlcmd config add-context --name tst add-endpoint jenzabardb
+sqlcmd config add-context --name tst add-endpoint jenzabardb-1433
+sqlcmd config add-context --name tst --endpoint jenzabardb-1433
+sqlcmd config get-endpoints
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info' -s ',' -W | from csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info'
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info' -s ','
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info' -s ',' -W
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info' -s ',' -W | from csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W | from csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W > ~/Downloads/test.csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W | ~/Downloads/test.csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W 
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'set nocount on; select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W 
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'set nocount on; select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W | from csv
+sqlcmd -S jenzabardb -U sa -P f5freedom* -No -C -Q 'set nocount on; select top 10 * from tmseprd.dbo.tlu_account_info order by job_time desc' -s ',' -W | from csv | where username == 'lday'
+awk
+sed
+pwd
+cd ~
+curl -fsSL "https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(date +%s)" | bash
+zsh
+colorls
+m .zshrc
+zsh
+clear
+ls -la
+ls -l
+ls -a
+cd .config/
+ls
+cd tmux/
+ls
+m tmux.conf.local
+zellij 
+clear
+tmux
+clear
+tmux 
+tmux
+brew install himalaya
+himalaya
+tmux list-keys
+tmux list-keys | more
+security add-generic-password -a 'tlu' -s 'himalaya-tlu-imap' -w JbH@wk1310
+himalaya
+cd `~/Library/Application Support/himalaya/`
+ls
+m config.toml
+himalaya
+m config.toml
+ls
+m config.toml
+pwd
+cd ~/.config/tmux/
+ls
+m tmux.conf.local
+exit
+zsh
+pwd
+cd .config/
+ls
+cd `~/Library/Application Support/`
+ls
+cd nushell/
+ls
+m config.nu
+exit
+exit
+tmux
+cd `~/Library/Application Support/nushell/`
+ls
+cd ~/.config/
+ls
+cd tmux/
+ls
+tmux
+m tmux.conf.local
+tmux
+tmux-killserver
+tmux kill-server
+m tmux.conf
+m tmux.conf.local
+tmux
+tmux attach
+tmux
+tmux kill-server
+nvim
+mkdir -p ~/.config/tmux/plugins/catppuccin
+mkdir --help
+zsh
+exit
+tmux
+exit
+tmux
+exit
+tmux
+which zsh
+exit
+tmux
+zsh
+cd plugins/catppuccin/tmux/
+m catppuccin.tmux
+ls
+m catppuccin.tmux
+m catppuccin_options_tmux.conf
+m catppuccin_tmux.conf
+tmux
+tmux kill-server
+tmux
+tmux --version
+tmux -v
+tmux --v
+tmux --V
+tmux -V
+tmux
+killall tmux
+tmux
+ls
+tmux
+cd plugins/catppuccin/tmux/
+ls
+^ls -la
+m run_tests.sh
+./run_tests.sh
+ls status/
+exit
+tmux
+m tmux.conf.local
+ls
+cp tmux.conf.local tmux.conf.local.backup
+m tmux.conf.local
+ls
+more  tmux-client-81335.log
+ls
+cp tmux.conf tmux.conf.backup
+ls
+rm tmux.conf
+ls
+touch tmux.conf
+tmux
+tmux kill-server
+tmux
+ls
+more tmux.conf
+rm tmux.conf
+cp tmux.conf.local tmux.conf
+tmux
+tmux kill-server
+tmux
+m tmux.conf.local
+m tmux.conf
+ls
+rm tmux.conf.local
+tmux 
+tmux kill-server
+m tmux.conf
+tmux 
+exit
+which zsh
+exit
+ls
+cd ..
+vi .bashrc
+exit
+ls
+exit

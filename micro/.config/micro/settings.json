@@ -1,0 +1,8 @@
+{
+    "colorscheme": "monokai-dark",
+    "pluginrepos": [
+        "https://raw.githubusercontent.com/weebi/micro-preview/master/repo.json"
+    ],
+    "showchars": "on",
+    "softwrap": true
+}
