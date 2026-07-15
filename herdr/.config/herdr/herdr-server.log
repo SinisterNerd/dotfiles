@@ -883,3 +883,4 @@
 2026-07-15T14:01:15.275537Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
 2026-07-15T14:31:15.281606Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
 2026-07-15T15:01:15.233570Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
+2026-07-15T15:31:15.284198Z  WARN herdr::detect::manifest_update: skipping unknown remote manifest agent agent="maki"
