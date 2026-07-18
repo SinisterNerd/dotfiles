@@ -5,8 +5,8 @@ requirements = ["fd", "bat"]
 
 [source]
 command = [
-  { name = "Default", run = "fd -t f" },
-  { name = "Hidden",  run = "fd -t f -H" },
+  { name = "Default", run = "fd -H -t f -t d -E .git " },
+  #{ name = "Hidden",  run = "fd -t f -H" },
 ]
 
 [preview]
@@ -21,7 +21,7 @@ ctrl-up = "actions:goto_parent_dir"
 
 [actions.edit]
 description = "Opens the selected entries with the default editor (falls back to vim)"
-command = "${EDITOR:-vim} '{}'"
+command = "${EDITOR:-nvim} '{}'"
 shell = "bash"
 # use `mode = "fork"` if you want to return to tv afterwards
 mode = "execute"

@@ -123,3 +123,4 @@ export PATH="$PATH:/usr/local/bin"
 eval "$(starship init zsh)"
 alias vi="nvim"
 alias vim="nvim"
+export EZA_CONFIG_DIR="~/.config/eza/
