@@ -9,7 +9,7 @@ return {
     },
     lazy = false, -- neo-tree will lazily load itself
   },
-  {
+ {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,

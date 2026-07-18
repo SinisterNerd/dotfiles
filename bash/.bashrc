@@ -8,3 +8,9 @@ alias ls="colorls"
 alias lc="colorls -lA --sd"
 
 eval "$(starship init bash)"
+
+
+FILE=$(tv files)
+vim "$FILE"
+
+
