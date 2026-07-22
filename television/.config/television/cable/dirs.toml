@@ -10,7 +10,7 @@ command = [
 ]
 
 [preview]
-command = "ls -la --color=always '{}'"
+command = "eza -la --color=always '{}'"
 
 [keybindings]
 shortcut = "f2"
