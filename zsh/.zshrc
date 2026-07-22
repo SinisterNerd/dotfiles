@@ -118,9 +118,11 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #--[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias ls='colorls'
+#alias ls='colorls'
+alias ls='eza'
 export PATH="$PATH:/usr/local/bin"
+export PATH="/Users/rspence/.local/bin:$PATH"
 eval "$(starship init zsh)"
 alias vi="nvim"
 alias vim="nvim"
-export EZA_CONFIG_DIR="~/.config/eza/
+export EZA_CONFIG_DIR="/Users/rspence/.config/eza/"
