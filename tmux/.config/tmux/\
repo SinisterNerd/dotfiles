@@ -15,22 +15,35 @@ set -g @catppuccin_window_text " #W"
 set -g @catppuccin_window_current_text " #W"
 
 
+# --- Custom Hostname Module ---
+%hidden MODULE_NAME="custom_host"
+set -g "@catppuccin_${MODULE_NAME}_icon" "💻 "
+set -gF "@catppuccin_${MODULE_NAME}_color" "#{E:@thm_mauve}"
+set -g "@catppuccin_${MODULE_NAME}_text" " #H" # Tmux token for short hostname
+
+# --- Custom OS Module ---
+%hidden MODULE_NAME="custom_os"
+set -g "@catppuccin_${MODULE_NAME}_icon" "💿 "
+set -gF "@catppuccin_${MODULE_NAME}_color" "#{E:@thm_maroon}"
+# Dynamically fetch OS name (works for macOS/Linux)
+set -g "@catppuccin_${MODULE_NAME}_text" " #(uname -s)" 
+
 run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
 # source "~/.config/tmux/plugins/catppuccin/tmux/utils/status_module.conf"
 
 # Make the status line more pleasant.
 set -g status-left ""
 # set -g status-right '#[fg=#{@thm_crust},bg=#{@thm_teal}] session: #S '
-set -g status-right "#[bg=#{@thm_teal},fg=#{@thm_crust}]#[reverse]#[noreverse] "
-set -ag status-right "#[fg=#{@thm_subtext_0},bg=#{@thm_surface_0}] #(curl -m 1 wttr.in?format=3 ; sleep 100)  "
+set -g status-right "#[bg=#{@thm_teal},fg=#{@thm_crust}]#[reverse]#[noreverse] "
+set -ag status-right "#[fg=#{@thm_fg},bg=#{@thm_mantle}] #(curl -m 1 wttr.in?format=3 ; sleep 100)  "
 set -ag status-right "#{E:@catppuccin_status_custom_os}"
+set -ag status-right "#{E:@catppuccin_status_custom_host}"
 # set -ag status-right "#{battery_status}"
 set -ag status-right "#{E:@catppuccin_status_application}"
 set -ag status-right "#{E:@catppuccin_status_session}"
-set -ag status-right "#{E:@catppuccin_status_user}"
-set -ag status-right "#[bg=#{@thm_blue},fg=#{@thm_surface_1}]#[reverse]#[noreverse]󰀵 "
+set -ag status-right "#[bg=#{@thm_blue},fg=#{@thm_surface_1}]#[reverse]#[noreverse] "
 # set -ag status-right "Hello"
-set -ag status-right "#[fg=#{@thm_subtext_0},bg=#{@thm_surface_0}] #(hostname | sed 's/.local//') "
+set -ag status-right "#[fg={{thm_red}},bg={{thm_red}}]#(hostname | sed 's/.local//') "
 set -agF status-right "#{E:@catppuccin_status_date_time}"
 
 set-window-option -g mode-style "bg=#{@thm_surface_1},fg=#{@thm_overlay_2},bold"
